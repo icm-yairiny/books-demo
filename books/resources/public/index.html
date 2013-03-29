@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ember JS/Clojure Tutorial</title>
-		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	</head>
-	<body>
-		Hello World!!!
-	</body>
+<head>
+	<title>Ember JS/Clojure Tutorial</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+	<script type="text/x-handlebars" data-template-name="application">
+		Hello World {{outlet}}
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="index">
+		from Ember JS and Clojure
+	</script>
+
+	<script src="js/lib/jquery-1.9.1.js"></script>
+	<script src="js/lib/handlebars-1.0.0-rc.3.js"></script>
+	<script src="js/lib/ember-1.0.0-rc.1.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
 </html>
