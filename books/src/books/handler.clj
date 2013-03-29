@@ -7,6 +7,7 @@
 (defroutes app-routes
   (GET "/" [] (resp/redirect "/index.html"))
   (route/resources "/")
+
   (route/not-found "Not Found"))
 
 (def app

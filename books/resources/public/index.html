@@ -3,15 +3,42 @@
 <head>
 	<title>Ember JS/Clojure Tutorial</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}	
+    </style>
 </head>
 <body>
 
 	<script type="text/x-handlebars" data-template-name="application">
-		Hello World {{outlet}}
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="#">Books</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+					</ul>
+					<form class="navbar-form pull-right">
+						<input class="span2" type="text">
+						<button type="submit" class="btn">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		{{outlet}}
+	</div>
+
 	</script>
 
 	<script type="text/x-handlebars" data-template-name="index">
-		from Ember JS and Clojure
+	from Ember JS and Clojure
 	</script>
 
 	<script src="js/lib/jquery-1.9.1.js"></script>

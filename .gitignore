@@ -1,8 +1,8 @@
 pom.xml
 *jar
-/lib/
-/classes/
+/books/lib/
+/books/classes/
 /targets/
 .lein-deps-sum
 *.sublime*
-/target/
+/books/target/
