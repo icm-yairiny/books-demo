@@ -38,7 +38,27 @@
 	</script>
 
 	<script type="text/x-handlebars" data-template-name="index">
-	from Ember JS and Clojure
+
+	<h4>All Books by Author</h4>
+	<ul class="unstyled">
+		{{#each authors}}
+			<li>
+				<strong>
+					{{first_name}}
+					{{middle_name}}
+					{{last_name}}
+				</strong>
+				<ul class="unstyled">
+					{{#each books}}
+						<li>
+							{{title}}
+						</li>
+					{{/each}}
+				</ul>
+			</li>
+		{{/each}}
+	</ul>
+
 	</script>
 
 	<script src="js/lib/jquery-1.9.1.js"></script>
